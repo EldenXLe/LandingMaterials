@@ -86,19 +86,7 @@ export default function Hero() {
           </div>
 
           {/* colagem */}
-          <div className="relative lg:col-span-5">
-            <div className="relative h-[100px] w-full">
-              {/* stat card */}
-              <div className="absolute right-0 top-0 z-10 w-[240px] rounded-2xl border border-emerald-300/20 bg-black/45 p-6 backdrop-blur hover:bg-black/60 transition-colors">
-                <p className="text-xs text-white/60">{stats?.[0]?.label || "Anos"}</p>
-                <p className="mt-2 text-5xl font-bold tracking-tight">
-                  {stats?.[0]?.value || "30+"}
-                </p>
-                <p className="mt-2 text-sm text-white/70">{stats?.[1]?.label || "Orçamento"}</p>
-              </div>
-
-            </div>
-          </div>
+          
         </div>
 
         <div className="h-14" />
