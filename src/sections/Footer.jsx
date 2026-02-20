@@ -4,7 +4,7 @@ export default function Footer() {
   const { brand, footer, contact } = site;
 
   return (
-    <footer className="border-t border-white/10 bg-black/20">
+    <footer className="border-t border-white/10 bg-black/25">
       <div className="mx-auto max-w-6xl px-4 py-10">
         <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
           <div>

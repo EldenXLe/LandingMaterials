@@ -7,21 +7,27 @@ export default function Contact() {
   return (
     <section id="contato" className="mx-auto max-w-6xl px-4 pb-16">
       <div className="grid gap-6 lg:grid-cols-2">
-        {/* CTA final */}
+        {/* CTA */}
         <div className="rounded-3xl border border-white/10 bg-white/5 p-6 md:p-10">
-          <h2 className="text-3xl font-bold md:text-4xl">Está com fome?</h2>
+          <p className="text-3xl font-bold md:text-4xl text-emerald-200/70">CONTATO</p>
+          <h2 className="mt-3 font-bold md:text-4xl">
+            Precisa de material pra sua obra?
+          </h2>
           <p className="mt-3 text-white/70 leading-relaxed">
-            Peça agora pelo WhatsApp e receba no conforto da sua casa.
+            Chame no WhatsApp, mande sua lista e a gente faz seu orçamento.
           </p>
 
           <div className="mt-6 flex flex-wrap gap-3">
             <a
-              className="rounded-xl bg-green-500 px-5 py-3 font-semibold text-black hover:bg-green-400"
-              href={buildWhatsAppLink(contact.whatsappNumber, "Olá! Quero fazer um pedido.")}
+              className="rounded-xl bg-emerald-400 px-5 py-3 font-semibold text-black hover:bg-emerald-300"
+              href={buildWhatsAppLink(
+                contact.whatsappNumber,
+                "Olá! Quero um orçamento. Minha lista é: ____"
+              )}
               target="_blank"
               rel="noreferrer"
             >
-              Pedir no WhatsApp
+              Pedir orçamento no WhatsApp
             </a>
 
             <a
@@ -50,18 +56,17 @@ export default function Contact() {
           </div>
         </div>
 
-        {/* “Mapa” simples (link + imagem) */}
+        {/* MAPA */}
         <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5">
           <iframe
             src={contact.mapsEmbedUrl}
-            className="h-[420px] w-full"
+            className="h-full w-full"
             style={{ border: 0 }}
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
             title="Mapa - localização"
           />
-
         </div>
       </div>
     </section>
