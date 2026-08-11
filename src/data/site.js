@@ -1,10 +1,12 @@
 export const site = {
   brand: {
-    name: "Loja de Materiais Exemplo",
+    name: "Loja de Materiais",
     badge: "🧱 Materiais • Entrega • Orçamento no WhatsApp",
     heroTitle: "Materiais para sua obra, do básico ao acabamento.",
     heroText:
       "Envie sua lista no WhatsApp e receba orçamento rápido. Entrega na região e atendimento que orienta no que você realmente precisa.",
+    seoDescription:
+      "Materiais de construção com entrega rápida na região. Peça orçamento pelo WhatsApp e receba em minutos.",
   },
 
   contact: {
@@ -12,14 +14,16 @@ export const site = {
     address: "R. Treze de Maio, Socorro - SP",
     hours: "Seg–Sex • 07h às 18h | Sáb • 07h às 12h",
     instagram: "@lojademateriais",
+    instagramUrl: "https://instagram.com/lojademateriais",
     mapsQuery: "R. Treze de Maio, Socorro - SP",
     mapsEmbedUrl:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.645191034781!2d-46.528578200000005!3d-22.592369899999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c93f9b8499c8bb%3A0x63b74a4417322e7b!2sR.%20Treze%20de%20Maio%2C%20Socorro%20-%20SP%2C%2013960-000!5e0!3m2!1spt-BR!2sbr!4v1771545188596!5m2!1spt-BR!2sbr",
   },
 
   stats: [
-    { label: "5 Anos atendendo a região", value: "80+" },
-    { label: "Orçamento no WhatsApp", value: "Rápido" },
+    { value: "5+", label: "Anos atendendo a região" },
+    { value: "800+", label: "Obras entregues" },
+    { value: "24h", label: "Resposta no WhatsApp" },
   ],
 
   aboutGrid: [
@@ -52,7 +56,7 @@ export const site = {
       tag: "Mais vendido",
       whatsappText: "Olá! Quero orçamento de cimento (saco 50kg).",
       image:
-        "https://api.aecweb.com.br/tematico/img_figuras/Uso-do-cimento-1111._Olho%24%240.webp",
+        "https://st3.depositphotos.com/1001335/15855/i/450/depositphotos_158559396-stock-photo-cement-bags-stack-paper-sacks.jpg",
     },
     {
       name: "Areia / Pedra",

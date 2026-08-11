@@ -1,12 +1,13 @@
 import { site } from "../data/site";
 import { buildWhatsAppLink } from "../utils/whatsapp";
+import Reveal from "../components/Reveal";
 
 export default function Highlights() {
   const { productsTitle, productsSubtitle, products, contact } = site;
 
   return (
     <section id="produtos" className="mx-auto max-w-6xl px-4 py-16">
-      <div className="mb-10 flex items-end justify-between gap-6">
+      <Reveal className="mb-10 flex items-end justify-between gap-6">
         <div>
           <h2 className="text-3xl font-bold md:text-4xl">{productsTitle}</h2>
           <p className="mt-3 max-w-2xl text-white/70">{productsSubtitle}</p>
@@ -23,12 +24,14 @@ export default function Highlights() {
         >
           Enviar lista no WhatsApp
         </a>
-      </div>
+      </Reveal>
 
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-        {products.map((p) => (
-          <article
+        {products.map((p, idx) => (
+          <Reveal
+            as="article"
             key={p.name}
+            delay={idx * 80}
             className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur hover:bg-white/10 transition-colors"
           >
             <div className="absolute left-4 top-4 z-10">
@@ -52,7 +55,7 @@ export default function Highlights() {
                 <span className="text-sm font-semibold text-white/90">{p.price}</span>
 
                 <a
-                  className="rounded-xl bg-emerald-400 px-3 py-2 text-sm font-semibold text-black hover:bg-emerald-300"
+                  className="rounded-xl bg-emerald-400 px-3 py-2 text-sm font-semibold text-black hover:bg-emerald-300 transition-colors"
                   href={buildWhatsAppLink(contact.whatsappNumber, p.whatsappText)}
                   target="_blank"
                   rel="noreferrer"
@@ -61,7 +64,7 @@ export default function Highlights() {
                 </a>
               </div>
             </div>
-          </article>
+          </Reveal>
         ))}
       </div>
 

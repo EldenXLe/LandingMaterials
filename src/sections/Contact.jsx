@@ -1,5 +1,6 @@
 import { site } from "../data/site";
 import { buildWhatsAppLink, buildMapsLink } from "../utils/whatsapp";
+import Reveal from "../components/Reveal";
 
 export default function Contact() {
   const { contact } = site;
@@ -8,9 +9,9 @@ export default function Contact() {
     <section id="contato" className="mx-auto max-w-6xl px-4 pb-16">
       <div className="grid gap-6 lg:grid-cols-2">
         {/* CTA */}
-        <div className="rounded-3xl border border-white/10 bg-white/5 p-6 md:p-10">
-          <p className="text-3xl font-bold md:text-4xl text-emerald-200/70">CONTATO</p>
-          <h2 className="mt-3 font-bold md:text-4xl">
+        <Reveal className="rounded-3xl border border-white/10 bg-white/5 p-6 md:p-10">
+          <p className="text-xs tracking-[0.3em] text-emerald-200/70">CONTATO</p>
+          <h2 className="mt-3 text-3xl font-bold md:text-4xl">
             Precisa de material pra sua obra?
           </h2>
           <p className="mt-3 text-white/70 leading-relaxed">
@@ -54,7 +55,7 @@ export default function Contact() {
               <p className="font-semibold">{contact.instagram}</p>
             </div>
           </div>
-        </div>
+        </Reveal>
 
         {/* MAPA */}
         <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5">

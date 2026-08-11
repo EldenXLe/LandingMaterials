@@ -1,11 +1,12 @@
 import { site } from "../data/site";
+import Reveal from "../components/Reveal";
 
 export default function Benefits() {
   const { benefits } = site;
 
   return (
     <section className="mx-auto max-w-6xl px-4 pb-16">
-      <div className="rounded-3xl border border-white/10 bg-white/5 p-6 md:p-10 backdrop-blur">
+      <Reveal className="rounded-3xl border border-white/10 bg-white/5 p-6 md:p-10 backdrop-blur">
         <div className="mb-8">
           <p className="text-xs tracking-[0.3em] text-emerald-200/70">DIFERENCIAIS</p>
           <h2 className="mt-3 text-3xl font-bold md:text-4xl">Por que comprar com a gente?</h2>
@@ -25,7 +26,7 @@ export default function Benefits() {
             </div>
           ))}
         </div>
-      </div>
+      </Reveal>
     </section>
   );
 }
